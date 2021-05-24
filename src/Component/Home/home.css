@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.home-grid-container{
+      display: grid;
+      grid-gap: 5px;
+      padding: 5px;
+      grid-template-areas:'header header header header header header'
+                          'filter main main main main main'
+                          'filter pagination pagination pagination pagination pagination';
+      align-items: center;
+      background-color: #ebf0fa;
+  }
+  
+.header{
+    grid-area: header;
+    color: white;
+    background-color: #326da8;
+    padding: 20px;
+    text-align: center;
+}
+
+.filter{
+    grid-area: filter;
+    padding: 5px;
+    
+}
+
+.filter-header{
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+    margin: 1px;
+    background-color: white;
+}
+
+.filter-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-categories{
+    text-align: left;
+    padding: 15px;
+    font-weight: 600;
+    margin: 1px;
+    background-color: white;
+}
+
+.content{
+    grid-area: main;
+    align-content: space-evenly;
+    
+}
