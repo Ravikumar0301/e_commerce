@@ -5,54 +5,40 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.home-grid-container *{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    background-color: aliceblue;
+    flex-direction: column;
+}
+
 .home-grid-container{
       display: grid;
+      height: 100vh;
+      grid-template-rows: auto auto 1fr auto;
+      grid-template-areas: "header header header header"
+                           "filter main main main"
+                           "filter main main main"
+                           "filter footer footer footer";
       grid-gap: 5px;
-      padding: 5px;
-      grid-template-areas:'header header header header header header'
-                          'filter main main main main main'
-                          'filter pagination pagination pagination pagination pagination';
-      align-items: center;
-      background-color: #ebf0fa;
   }
   
 .header{
     grid-area: header;
-    color: white;
-    background-color: #326da8;
-    padding: 20px;
-    text-align: center;
 }
 
 .filter{
-    grid-area: filter;
-    padding: 5px;
-    
+    grid-area: filter;    
 }
 
-.filter-header{
-    text-align: left;
-    padding: 15px;
-    font-weight: 600;
-    margin: 1px;
-    background-color: white;
+.main{
+    grid-area: main;  
+    align-items:flex-start; 
 }
 
-.filter-container{
-    display: flex;
-    flex-direction: column;
-}
-
-.filter-categories{
-    text-align: left;
-    padding: 15px;
-    font-weight: 600;
-    margin: 1px;
-    background-color: white;
-}
-
-.content{
-    grid-area: main;
-    align-content: space-evenly;
-    
+.footer{
+    grid-area: footer;
 }
