@@ -8,11 +8,9 @@
 .home-grid-container *{
     display: flex;
     align-items: center;
-    justify-content: center;
     margin-bottom: 1px;
     margin-right: 1px;
-    background-color: aliceblue;
-    flex-direction: column;
+    flex-direction: column;    
 }
 
 .home-grid-container{
@@ -28,17 +26,28 @@
   
 .header{
     grid-area: header;
+    padding: 20px;
+    color: white;
+    background-color: #0352fc;
+    font-size: 24px;
+    font-weight: 500;
 }
 
 .filter{
     grid-area: filter;    
+    align-items: flex-start;
+    background-color: #F5F5F5;
 }
 
 .main{
     grid-area: main;  
     align-items:flex-start; 
+    background-color: #F5F5F5;
 }
 
 .footer{
     grid-area: footer;
+    background-color: #F5F5F5;
+    padding: 5px;
 }
+
